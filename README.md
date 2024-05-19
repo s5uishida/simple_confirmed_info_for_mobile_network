@@ -8,14 +8,14 @@ This is a memo of environment information when briefly confirming the operation 
 
 ---
 
-## Open5GS
+## [Open5GS](https://github.com/open5gs/open5gs)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 2.7.1+ | `02d302b15aa316a1f39cb7d9592c96c9ff73f18b`<br>2024.05.18 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | UPF | 2.7.1+ | `02d302b15aa316a1f39cb7d9592c96c9ff73f18b`<br>2024.05.18 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
 
-## free5GC
+## [free5GC](https://github.com/free5gc/free5gc)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -23,37 +23,37 @@ This is a memo of environment information when briefly confirming the operation 
 | UPF | 1.2.2+ | `922281ba58b6ca42d73be218671c8feae3658420`<br>2024.05.11 | Ubuntu<br>22.04 | 1 | 1GB | 20GB |
 | gtp5g<br>(UPF) | 0.8.9 | `6657a0a2084486f499d951d169fb3c0232f6b454`<br>2024.05.03 | -- | -- | -- | -- |
 
-## UPG-VPP
+## [UPG-VPP](https://github.com/travelping/upg-vpp)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | UPF | 1.13.0 | `dfdf64000566d35955d7c180720ff66086bd3572`<br>2024.03.25 | Ubuntu<br>22.04 | 2 | 8GB | 20GB |
 
-## eUPF
+## [eUPF](https://github.com/edgecomllc/eupf)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | UPF | 0.6.4+ | `ec283f5c857cd81a05c47d643c49c84adc4df41f`<br>2024.05.07 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
-## UERANSIM
+## [UERANSIM](https://github.com/aligungr/UERANSIM)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 3.2.6+ | `85a0fbfdd166da84c39ed5b4a5435afd40725878`<br>2024.04.17 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
-## srsRAN_Project
+## [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN | 24.04+ | `78238fd15e4cd82a6324d6dbbb612ac5584b13ea`<br>2024.05.13 | Ubuntu<br>24.04 | 2 | 4GB | 20GB |
 
-## srsRAN_4G
+## [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 23.11+ | `ec29b0c1ff79cebcbe66caa6d6b90778261c42b8`<br>2024.02.01 | Ubuntu<br>22.04 | 1 | 2GB | 20GB |
 
-## PacketRusher
+## [PacketRusher](https://github.com/HewlettPackard/PacketRusher)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
