@@ -1,0 +1,1 @@
+# simple_confirmed_info_for_mobile_network
