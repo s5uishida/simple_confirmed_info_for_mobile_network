@@ -2,6 +2,12 @@
 
 This is a memo of environment information when briefly confirming the operation of some functions of each open source. Please note that it may not work depending on the environment.
 
+---
+
+### [Sample Configurations and Miscellaneous for Mobile Network](https://github.com/s5uishida/sample_config_misc_for_mobile_network)
+
+---
+
 ## Open5GS
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
