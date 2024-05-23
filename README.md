@@ -57,5 +57,5 @@ This is a memo of environment information when briefly confirming the operation 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | -- | `578563bb2f32925a5178c8f5c17d5ba723c7dd48`<br>2024.04.17 | Ubuntu<br>22.04 | 1 | 1GB | 10GB |
-| gtp5g<br>(RAN) | 0.8.4 | `1eab6ace1a5cf32a1cd837a68e5c163f8b448486`<br>2024.01.16 | -- | -- | -- | -- |
+| RAN & UE | 20240521 | `2bbcc24fa2ebf14335d6eec8737291f2205b91a1`<br>2024.05.19 | Ubuntu<br>22.04 | 1 | 1GB | 10GB |
+| gtp5g<br>(RAN) | 0.8.6 | `d8818ee80a9a004ea0fac3715415395810666921`<br>2024.02.18 | -- | -- | -- | -- |
