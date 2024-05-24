@@ -66,4 +66,4 @@ This is a memo of environment information when briefly confirming the operation 
    ```
    # echo 0 > /proc/gtp5g/seq
    ```
-   Also, the measurements using iperf3 tended to be better when GTP-U Sequence Number was disabled.   
+   Also, UPF performance measurements using iperf3 tended to be better when GTP-U Sequence Number was disabled. (e.g. UPG-VPP)
