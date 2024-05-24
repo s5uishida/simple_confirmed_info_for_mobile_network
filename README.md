@@ -63,6 +63,7 @@ This is a memo of environment information when briefly confirming the operation 
 
 1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number as follows.
    
-```
-# echo 0 > /proc/gtp5g/seq
-```
+   ```
+   # echo 0 > /proc/gtp5g/seq
+   ```
+   Also, the measurements using iperf3 tended to be better when GTP-U Sequence Number was disabled.   
