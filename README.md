@@ -12,8 +12,8 @@ This is a memo of environment information when briefly confirming the operation 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 2.7.1+ | `02d302b15aa316a1f39cb7d9592c96c9ff73f18b`<br>2024.05.18 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| UPF | 2.7.1+ | `02d302b15aa316a1f39cb7d9592c96c9ff73f18b`<br>2024.05.18 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
+| C-Plane | 2.7.1+ | `2a4d8db72eac25dcd29ed313e82dcc347cca7d43`<br>2024.05.25 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 2.7.1+ | `2a4d8db72eac25dcd29ed313e82dcc347cca7d43`<br>2024.05.25 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
 
 ## [free5GC](https://github.com/free5gc/free5gc)
 
