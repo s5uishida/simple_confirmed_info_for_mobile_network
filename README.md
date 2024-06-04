@@ -104,11 +104,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | **NG** | **NG** |
+| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | **NG** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | **NG** | **NG** |
+| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | **NG** |
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
@@ -129,3 +129,5 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | **NG** |
+
+2. UPG-VPP v1.13.0 does not support PDU Session container. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
