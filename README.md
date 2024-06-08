@@ -12,7 +12,7 @@ This is a memo of environment information when briefly confirming the operation 
 
 ## Table of Contents
 
-- [Version and Resource](#version_resource)
+- [Version and Resource requirements](#version_resource)
 - [Ping and iPerf3](#ping_iperf3)
   - [For 5G](#5g)
   - [For 4G](#4g)
@@ -20,7 +20,7 @@ This is a memo of environment information when briefly confirming the operation 
 ---
 <a id="version_resource"></a>
 
-## Version and Resource
+## Version and Resource requirements
 
 ### [Open5GS](https://github.com/open5gs/open5gs)
 
