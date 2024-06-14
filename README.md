@@ -86,7 +86,7 @@ This is a memo of environment information when briefly confirming the operation 
 
 ## Ping and iPerf3
 
-Below are the results of confirming the operation of ping and iperf3 in my environment, but it is possible that I have made some configuration mistakes.
+Below are the results of confirming the operation of ping and iperf3 in my environment.
 
 <a id="5g"></a>
 
