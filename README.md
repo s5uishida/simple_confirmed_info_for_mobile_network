@@ -59,7 +59,7 @@ This is a memo of environment information when briefly confirming the operation 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 24.04+ | `f3ed07a5a6f04245a57ca667194e1a3bf9684149`<br>2024.05.21 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
+| RAN | 24.04+ | `c33cacba7d940e734ac7bad08935cbc35578fad9`<br>2024.06.10 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
