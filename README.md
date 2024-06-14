@@ -131,7 +131,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | eUPF | Separate | OK | OK **[3]** |
 
 2. UPG-VPP v1.13.0 does not support `PDU Session container`. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
-3. To avoid IP fragmentation, change the MTU of both N6 or SGi interface of eUPF and `tun_srsue` interface of srsRAN_4G UE as follows.  
+3. To avoid IP fragmentation, change the MTU of both N6 or SGi interface of eUPF and `tun_srsue` interface of srsRAN_4G UE as follows.
+   
    For N6 or SGi interface of eUPF:
    ```
    # ip link set <N6 or SGi interface of eUPF> mtu 1450
