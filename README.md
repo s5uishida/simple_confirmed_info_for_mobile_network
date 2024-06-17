@@ -75,7 +75,7 @@ This is a memo of environment information when briefly confirming the operation 
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.8.6 | `d8818ee80a9a004ea0fac3715415395810666921`<br>2024.02.18 | -- | -- | -- | -- |
 || 0.8.9 **[1]** | `6657a0a2084486f499d951d169fb3c0232f6b454`<br>2024.05.03 | -- | -- | -- | -- |
 
-1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number as follows.
+1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number of gtp5g used by PacketRusher as follows.
    
    ```
    # echo 0 > /proc/gtp5g/seq
@@ -113,11 +113,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
-| | | | eUPF | Separate | OK | OK |
+| | | | eUPF | Separate | OK **[1]** | OK **[1]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
-| | | | eUPF | Separate | OK | OK |
+| | | | eUPF | Separate | OK **[1]** | OK **[1]** |
 
 <a id="4g"></a>
 
