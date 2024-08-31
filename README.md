@@ -48,7 +48,7 @@ This is a memo of environment information when briefly confirming the operation 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.6.4+ | `ec283f5c857cd81a05c47d643c49c84adc4df41f`<br>2024.05.07 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.6.4 | `0f704deaca67766733a447f4680cf4d77e638934`<br>2024.05.01 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
