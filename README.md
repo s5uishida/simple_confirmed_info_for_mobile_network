@@ -34,8 +34,8 @@ This is a memo of environment information when briefly confirming the operation 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 3.4.2+ | `a39de62e1204a1ddf02f37b32d09ba9d52731b05`<br>2024.08.22 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `922281ba58b6ca42d73be218671c8feae3658420`<br>2024.05.11 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
-| | 1.2.1<br>(for ULCL) | `44a445df3d80b3c3052dea80c3ac112ebc73cbff`<br>2023.12.19 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `922281ba58b6ca42d73be218671c8feae3658420`<br>2024.05.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| | 1.2.1<br>(for ULCL) | `44a445df3d80b3c3052dea80c3ac112ebc73cbff`<br>2023.12.19 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.8.10 | `3ee1a5262c5b4dc2ba118b7cb1ed0ba842d3b07b`<br>2024.06.03 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
