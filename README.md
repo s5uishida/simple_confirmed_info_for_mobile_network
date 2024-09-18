@@ -35,7 +35,6 @@ This is a memo of environment information when briefly confirming the operation 
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 3.4.3+ | `0d2cb87d33bb84ee898c3f46e2fb284e466614b7`<br>2024.09.12 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `922281ba58b6ca42d73be218671c8feae3658420`<br>2024.05.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| | 1.2.1<br>(for ULCL) | `44a445df3d80b3c3052dea80c3ac112ebc73cbff`<br>2023.12.19 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.8.10 | `3ee1a5262c5b4dc2ba118b7cb1ed0ba842d3b07b`<br>2024.06.03 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
