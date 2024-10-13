@@ -27,15 +27,15 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 2.7.2+ | `6d80d4322a6daf4420c39f2edb1d1d8585a577a0`<br>2024.09.04 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| UPF | 2.7.2+ | `6d80d4322a6daf4420c39f2edb1d1d8585a577a0`<br>2024.09.04 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
+| C-Plane | 2.7.2+ | `606788361cb2255961f856de17d71c6b2fc86847`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 2.7.2+ | `606788361cb2255961f856de17d71c6b2fc86847`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
 
 ### [free5GC](https://github.com/free5gc/free5gc)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 3.4.3+ | `0d2cb87d33bb84ee898c3f46e2fb284e466614b7`<br>2024.09.12<br>**(Latest nightly build on 2024.09.23)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `922281ba58b6ca42d73be218671c8feae3658420`<br>2024.05.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| C-Plane | 3.4.3+ | `9675d563ac90ec2193ccbbdd700b0fb534a4165b`<br>2024.10.11<br>**(Latest nightly build on 2024.10.14)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `6b73d126b8b29b4d17ff744c31ef50634ee64164`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.8.10 | `3ee1a5262c5b4dc2ba118b7cb1ed0ba842d3b07b`<br>2024.06.03 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.6.4 | `0f704deaca67766733a447f4680cf4d77e638934`<br>2024.05.01 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.6.4 | `55ce219c09776470f9a8f66bea020466a61e4e87`<br>2024.09.22 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [OsmoUPF](https://gitea.osmocom.org/cellular-infrastructure/osmo-upf)
 
@@ -80,7 +80,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20240521+ | `32a08fa9fb2d83b654628b5187a0244a66b737b2`<br>2024.06.24 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.8.6 | `d8818ee80a9a004ea0fac3715415395810666921`<br>2024.02.18 | -- | -- | -- | -- |
-|| 0.9.1+ **[1]** | `02ac100d8fb71e8dd00d2421a4914dd504b913dd`<br>2024.08.15 | -- | -- | -- | -- |
+|| 0.9.2 **[1]** | `0ec00843e79ff4660a43fbeddf2ae730414dee5c`<br>2024.10.11 | -- | -- | -- | -- |
 
 1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number of gtp5g used by PacketRusher as follows.
    
