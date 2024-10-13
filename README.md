@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.6.4 | `55ce219c09776470f9a8f66bea020466a61e4e87`<br>2024.09.22 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.6.4+ | `55ce219c09776470f9a8f66bea020466a61e4e87`<br>2024.09.22 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [OsmoUPF](https://gitea.osmocom.org/cellular-infrastructure/osmo-upf)
 
