@@ -35,7 +35,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 3.4.3+ | `9675d563ac90ec2193ccbbdd700b0fb534a4165b`<br>2024.10.11<br>**(Latest nightly build on 2024.10.14)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.3 | `6b73d126b8b29b4d17ff744c31ef50634ee64164`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.3+ | `6b73d126b8b29b4d17ff744c31ef50634ee64164`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.8.10 | `3ee1a5262c5b4dc2ba118b7cb1ed0ba842d3b07b`<br>2024.06.03 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
