@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.6.4+ | `55ce219c09776470f9a8f66bea020466a61e4e87`<br>2024.09.22 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.6.4 | `0f704deaca67766733a447f4680cf4d77e638934`<br>2024.05.01 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [OsmoUPF](https://gitea.osmocom.org/cellular-infrastructure/osmo-upf)
 
@@ -66,7 +66,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 24.10 | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d`<br>2024.10.14 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
+| RAN | 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652`<br>2024.07.31 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
