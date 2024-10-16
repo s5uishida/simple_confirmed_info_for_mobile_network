@@ -27,8 +27,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 2.7.2+ | `f82fc85cc21fa9e85b40020ba46594d04c905327`<br>2024.10.15 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| UPF | 2.7.2+ | `f82fc85cc21fa9e85b40020ba46594d04c905327`<br>2024.10.15 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
+| C-Plane | 2.7.2+ | `5dc3905c39fd6ccd6d82f769e2c0d6f208caf0cf`<br>2024.10.16 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 2.7.2+ | `5dc3905c39fd6ccd6d82f769e2c0d6f208caf0cf`<br>2024.10.16 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
 
 ### [free5GC](https://github.com/free5gc/free5gc)
 
@@ -66,7 +66,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 24.04+ | `4ac5300d4927b5199af69e6bc2e55d061fc33652`<br>2024.07.31 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
+| RAN | 24.10  | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d`<br>2024.10.14 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
