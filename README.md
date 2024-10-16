@@ -50,12 +50,6 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | UPF | 0.6.4 | `0f704deaca67766733a447f4680cf4d77e638934`<br>2024.05.01 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
-### [OsmoUPF](https://gitea.osmocom.org/cellular-infrastructure/osmo-upf)
-
-| Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
-| --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.1.1.109 | `6859de09d2ae0e363070e152489d9f8579085aa8`<br>2024.08.16 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
@@ -105,32 +99,26 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OsmoUPF | Separate | NG | NG |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OsmoUPF | Separate | NG | NG |
 | srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK **[3]** |
-| | | | OsmoUPF | Separate | NG | NG |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK **[3]** |
-| | | | OsmoUPF | Separate | NG | NG |
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
 | | | | eUPF | Separate | OK **[1]** | OK **[1]** |
-| | | | OsmoUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
 | | | | eUPF | Separate | OK **[1]** | OK **[1]** |
-| | | | OsmoUPF | Separate | OK | OK |
 
 <a id="4g"></a>
 
@@ -142,7 +130,6 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK **[3]** |
-| | | | | OsmoUPF | Separate | OK | OK |
 
 2. UPG-VPP v1.13.0 does not support `PDU Session container`. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
 3. To avoid IP fragmentation, change the MTU of `tun_srsue` interface of srsRAN_4G UE as follows.
