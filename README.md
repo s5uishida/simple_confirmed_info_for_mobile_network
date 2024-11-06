@@ -34,9 +34,9 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 3.4.3+ | `88242bed1772aef34bda1e9931e312bf4e88a56b`<br>2024.10.22<br>**(Latest nightly build on 2024.10.31)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.3+ | `6b73d126b8b29b4d17ff744c31ef50634ee64164`<br>2024.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.8.10 | `3ee1a5262c5b4dc2ba118b7cb1ed0ba842d3b07b`<br>2024.06.03 | -- | -- | -- | -- |
+| C-Plane | 3.4.3+ | `4ee2990a796d769b846143314f1df8e0438f9523`<br>2024.11.04<br>**(Latest nightly build on 2024.11.06)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.3+ | `3b73a2bc43f01fc412bac34f221776684f652623`<br>2024.11.04 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.3+ | `6a05967f97699a947837cf9497fab1ab2c13aaaa`<br>2024.11.06 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
@@ -74,7 +74,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20240521+ | `32a08fa9fb2d83b654628b5187a0244a66b737b2`<br>2024.06.24 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.8.6 | `d8818ee80a9a004ea0fac3715415395810666921`<br>2024.02.18 | -- | -- | -- | -- |
-|| 0.9.2 **[1]** | `0ec00843e79ff4660a43fbeddf2ae730414dee5c`<br>2024.10.11 | -- | -- | -- | -- |
+|| 0.9.3+ **[1]** | `6a05967f97699a947837cf9497fab1ab2c13aaaa`<br>2024.11.06 | -- | -- | -- | -- |
 
 1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number of gtp5g used by PacketRusher as follows.
    
