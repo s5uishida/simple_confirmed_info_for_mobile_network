@@ -139,8 +139,12 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
      parameter:
        use_upg_vpp: true
    ```
-4. When connecting PacketRusher to eUPF and using iperf3, the following version was used for PacketRusher.
-   
+4. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1450 bytes before the downlink packet reaches the N6 interface of the eUPF. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
+
+   ```
+   # ip link set ens20 mtu 1450
+   ```
+   Alternatively, use the following version of PacketRusher.
    | RAN & UE | Version | Commit & Date |
    | --- | --- | --- |
    | PacketRusher | 20240521+ | `32a08fa9fb2d83b654628b5187a0244a66b737b2`<br>2024.06.24 |
