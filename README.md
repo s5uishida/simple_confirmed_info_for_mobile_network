@@ -144,7 +144,3 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    ```
    # ip link set ens20 mtu 1450
    ```
-   Alternatively, use the following version of PacketRusher.
-   | RAN & UE | Version | Commit & Date |
-   | --- | --- | --- |
-   | PacketRusher | 20240521+ | `32a08fa9fb2d83b654628b5187a0244a66b737b2`<br>2024.06.24 |
