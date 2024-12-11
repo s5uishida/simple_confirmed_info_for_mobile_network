@@ -54,7 +54,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 3.2.6+ | `528061fe10389876da58d3bd15e8cba6d7c152a9`<br>2024.08.27 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 3.2.6+ | `01e3785420ff7db34fa8723ff34189b8372cf02e`<br>2024.12.10 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
