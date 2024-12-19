@@ -73,8 +73,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20240521+ | `fd83fec05d964cab7a16fe0d55ff230dd6d9a77a`<br>2024.11.27 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.8.6 | `d8818ee80a9a004ea0fac3715415395810666921`<br>2024.02.18 | -- | -- | -- | -- |
-|| 0.9.3+ **[1]** | `1a6bc5d26ddb7fc1602f5649ebc9077c4cd41e43`<br>2024.11.28 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.5+ | `5c04e67c76840c6cde0001798159e9acc79aa555`<br>2024.12.18 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
@@ -90,7 +89,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | --- | --- | --- | --- | --- | --- | --- |
 | UERANSIM | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
+| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
@@ -98,20 +97,20 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[2][3]** | OK **[2][3]** |
+| | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
+| | | | UPG-VPP | Separate | OK **[1]** | OK **[1]** |
 | | | | eUPF | Separate | OK | OK |
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
-| | | | eUPF | Separate | OK **[1]** | OK **[1][4]** |
+| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
+| | | | eUPF | Separate | OK | OK **[3]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK | OK |
-| | | | eUPF | Separate | OK **[1]** | OK **[1][4]** |
+| | | | eUPF | Separate | OK | OK **[3]** |
 
 <a id="4g"></a>
 
@@ -121,17 +120,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | srsRAN_4G | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | | Same | OK | OK |
-| | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
+| | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | | eUPF | Separate | OK | OK |
 
-1. In gtp5g v0.8.7 and later, GTP-U Sequence Number is enabled by default. In this case, eUPF will probably not be able to process GTP-U packets correctly. Therefore, if connecting to eUPF, please disable GTP-U Sequence Number of gtp5g used by PacketRusher as follows.
-   
-   ```
-   # echo 0 > /proc/gtp5g/seq
-   ```
-   Also, UPF performance measurements using iperf3 tended to be better when GTP-U Sequence Number was disabled. (e.g. UPG-VPP)
-2. UPG-VPP v1.13.0 does not support `PDU Session container`. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
-3. To connect Open5GS SMF to UPG-VPP, add the following parameter `use_upg_vpp: true` in `smf.yaml`. See [here](https://github.com/open5gs/open5gs/discussions/3591#discussioncomment-11369302) for the reason.
+1. UPG-VPP v1.13.0 does not support `PDU Session container`. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
+2. To connect Open5GS SMF to UPG-VPP, add the following parameter `use_upg_vpp: true` in `smf.yaml`. See [here](https://github.com/open5gs/open5gs/discussions/3591#discussioncomment-11369302) for the reason.
    
    `smf.yaml`
    ```
@@ -139,7 +132,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
      parameter:
        use_upg_vpp: true
    ```
-4. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1450 bytes before the downlink packet reaches the N6 interface of the eUPF. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
+3. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1450 bytes before the downlink packet reaches the N6 interface of the eUPF. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
 
    ```
    # ip link set ens20 mtu 1450
