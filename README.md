@@ -60,7 +60,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 24.10  | `9d5dd742a70e82c0813c34f57982f9507f1b6d5d`<br>2024.10.14 | Ubuntu<br>24.04 | 2 | 4GB | 10GB |
+| RAN | 24.10+ | `e5d5b44b92cf18d1bd1736da0148e5f9cce3721d`<br>2024.12.03 | Ubuntu<br>24.04 | 4 | 4GB | 10GB |
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
