@@ -123,6 +123,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | | eUPF | Separate | OK | OK |
 
+<a id="footnotes"></a>
+
 1. UPG-VPP v1.13.0 does not support `PDU Session container`. Therefore, some gNodeBs such as srsRAN_Project, may not accept GTP traffic from UPG-VPP. In that case, please refer to [this](https://github.com/s5uishida/install_vpp_upf_dpdk/tree/main#build-upg-vpp-v1130) note. In these results, I applied this temporary patch and confirmed that it worked with the gNodeB of srsRAN_Project.
 2. To connect Open5GS SMF to UPG-VPP, add the following parameter `use_upg_vpp: true` in `smf.yaml`. See [here](https://github.com/open5gs/open5gs/discussions/3591#discussioncomment-11369302) for the reason.
    
