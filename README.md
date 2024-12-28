@@ -93,7 +93,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK | OK |
+| | | | UPG-VPP | Separate | OK **[4]** | OK **[4]** |
 | | | | eUPF | Separate | OK | OK |
 | srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
@@ -101,7 +101,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[1]** | OK **[1]** |
+| | | | UPG-VPP | Separate | OK **[1][4]** | OK **[1][4]** |
 | | | | eUPF | Separate | OK | OK |
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
@@ -109,7 +109,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK **[3]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK | OK |
+| | | | UPG-VPP | Separate | OK **[4]** | OK **[4]** |
 | | | | eUPF | Separate | OK | OK **[3]** |
 
 <a id="4g"></a>
@@ -138,4 +138,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
    ```
    # ip link set ens20 mtu 1450
+   ```
+4. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
+   
+   `smfcfg.yaml`
+   ```
+   configuration:
+     nwInstFqdnEncoding: true
    ```
