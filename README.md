@@ -27,17 +27,17 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 2.7.2+ | `b44d159c7bb0edb33813a3b03a482501e1a4354b`<br>2024.12.13 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| UPF | 2.7.2+ | `b44d159c7bb0edb33813a3b03a482501e1a4354b`<br>2024.12.13 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
+| C-Plane | 2.7.2+ | `13585a34e3d5505dd86d2cdf78c91829f3936851`<br>2025.01.12 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 2.7.2+ | `13585a34e3d5505dd86d2cdf78c91829f3936851`<br>2025.01.12 | Ubuntu<br>24.04 | 1 | 1GB | 20GB |
 
 ### [free5GC](https://github.com/free5gc/free5gc)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 3.4.4+ | `9533f715e811d76f2b9f6854becc3cc1eaa9ab36`<br>2024.12.23<br>**(Latest nightly build on 2025.01.01)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| C-Plane | 3.4.4+ | `f9ebb11738a6efa0f6885299be0cc46aeeadecfd`<br>2025.01.03<br>**(Latest nightly build on 2025.01.14)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | [SMF](https://github.com/free5gc/smf)<br>(ULCL) | 1.2.6+ | `a83d0b07f2094e8a983a9523b1a9aa2b16279d96`<br>2024.12.13 | -- | -- | -- | -- |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.4+ | `6583e4471902ed46d488623c5ee1816856da2e82`<br>2024.12.25 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.6 | `11ff34a9f13df040b43883a1ceddc22c6869622a`<br>2024.12.27 | -- | -- | -- | -- |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.4+ | `88fbd8bb7b86761cbbcf1367acf2df7d81392ce3`<br>2025.01.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.8 | `be7da934e4456a6dc2cc195d49e5334463b3c19e`<br>2025.01.14 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
@@ -74,7 +74,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20240521+ | `fd83fec05d964cab7a16fe0d55ff230dd6d9a77a`<br>2024.11.27 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.6 | `11ff34a9f13df040b43883a1ceddc22c6869622a`<br>2024.12.27 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.8 | `be7da934e4456a6dc2cc195d49e5334463b3c19e`<br>2025.01.14 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
