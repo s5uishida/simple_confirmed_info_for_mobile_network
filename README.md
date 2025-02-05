@@ -34,10 +34,10 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 3.4.4+ | `f9ebb11738a6efa0f6885299be0cc46aeeadecfd`<br>2025.01.03<br>**(Latest nightly build on 2025.01.14)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [SMF](https://github.com/free5gc/smf)<br>(ULCL) | 1.2.6+ | `a83d0b07f2094e8a983a9523b1a9aa2b16279d96`<br>2024.12.13 | -- | -- | -- | -- |
+| C-Plane | 3.4.4+ | `f9ebb11738a6efa0f6885299be0cc46aeeadecfd`<br>2025.01.03<br>**(Latest nightly build on 2025.02.05)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| [SMF](https://github.com/free5gc/smf)<br>(ULCL) | 1.2.6+ | `d049a7aa51db56cb2fad33713e422deac77ee2eb`<br>2025.01.23<br>**+https://github.com/free5gc/smf/pull/147** | -- | -- | -- | -- |
 | [UPF](https://github.com/free5gc/go-upf) | 1.2.4+ | `88fbd8bb7b86761cbbcf1367acf2df7d81392ce3`<br>2025.01.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.8 | `be7da934e4456a6dc2cc195d49e5334463b3c19e`<br>2025.01.14 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.11 | `4993e7c5e69e062b1e9bc60e5df3ed243aa5f6d1`<br>2025.01.24 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
@@ -74,7 +74,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20240521+ | `fd83fec05d964cab7a16fe0d55ff230dd6d9a77a`<br>2024.11.27 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.8 | `be7da934e4456a6dc2cc195d49e5334463b3c19e`<br>2025.01.14 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.11 | `4993e7c5e69e062b1e9bc60e5df3ed243aa5f6d1`<br>2025.01.24 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
