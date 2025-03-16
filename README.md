@@ -73,8 +73,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 20240521+ | `fd83fec05d964cab7a16fe0d55ff230dd6d9a77a`<br>2024.11.27 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.11 | `4993e7c5e69e062b1e9bc60e5df3ed243aa5f6d1`<br>2025.01.24 | -- | -- | -- | -- |
+| RAN & UE | 20250225+ | `d51f7cb7644dedb9cfc19796ef6da4fbeee0d936`<br>2025.03.13 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.12+ | `d4c2d6effe5c35bbe5bee9b7040056649aedf95a`<br>2025.03.13 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
