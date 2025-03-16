@@ -36,8 +36,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 3.4.4+ | `f9ebb11738a6efa0f6885299be0cc46aeeadecfd`<br>2025.01.03<br>**(Latest nightly build on 2025.02.05)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | [SMF](https://github.com/free5gc/smf)<br>(ULCL) | 1.2.6+ | `d049a7aa51db56cb2fad33713e422deac77ee2eb`<br>2025.01.23<br>**+https://github.com/free5gc/smf/pull/147** | -- | -- | -- | -- |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.4+ | `88fbd8bb7b86761cbbcf1367acf2df7d81392ce3`<br>2025.01.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.11 | `4993e7c5e69e062b1e9bc60e5df3ed243aa5f6d1`<br>2025.01.24 | -- | -- | -- | -- |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.6 | `07801dcf3cfd0516610aae3fa08809cfd0b2497f`<br>2025.03.03 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.12+ | `d4c2d6effe5c35bbe5bee9b7040056649aedf95a`<br>2025.03.13 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
