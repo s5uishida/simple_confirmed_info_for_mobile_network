@@ -139,7 +139,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    ```
    # ip link set ens20 mtu 1456
    ```
-7. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
+4. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
    
    `smfcfg.yaml`
    ```
