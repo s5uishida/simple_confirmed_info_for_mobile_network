@@ -134,12 +134,12 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
      parameter:
        use_upg_vpp: true
    ```
-3. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1450 bytes before the downlink packet reaches the N6 interface of the eUPF. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
+3. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1456 bytes before the downlink packets reaches the N6 interface of the eUPF. This 1456 bytes is 1500 bytes minus 44 bytes. The 44 bytes is the size of the headers added when eUPF encapsulates the downlink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes), and GTP-U Header (12 bytes + 4 bytes) including one GTP-U Extension Header for QFI. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
 
    ```
-   # ip link set ens20 mtu 1450
+   # ip link set ens20 mtu 1456
    ```
-4. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
+7. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
    
    `smfcfg.yaml`
    ```
