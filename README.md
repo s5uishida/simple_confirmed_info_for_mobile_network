@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.7.0+ | `cb04a1b818d6ad4e7cc88cdba30857cf3d95fc83`<br>2025.03.04 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.7.1+ | `8c2097ea87413f8497076a4b20f0f91d4531ac8d`<br>2025.04.16 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
@@ -72,8 +72,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 20250225+ | `d51f7cb7644dedb9cfc19796ef6da4fbeee0d936`<br>2025.03.13 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.12+ | `d4c2d6effe5c35bbe5bee9b7040056649aedf95a`<br>2025.03.13 | -- | -- | -- | -- |
+| RAN & UE | 20250225+ | `2b2657337f48a2586d1a7f604ac3674085503b21`<br>2025.04.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.13+ | `48afb681775159e3e73ea26c736aa37bb3375157`<br>2025.04.11 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
