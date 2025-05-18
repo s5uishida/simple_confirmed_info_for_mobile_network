@@ -93,7 +93,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[4]** | OK **[4]** |
+| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
 | srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
@@ -101,16 +101,16 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[1][4]** | OK **[1][4]** |
+| | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
 | | | | eUPF | Separate | OK | OK |
 | PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
-| | | | eUPF | Separate | OK | OK **[3]** |
+| | | | eUPF | Separate | OK | OK **[4]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[4]** | OK **[4]** |
-| | | | eUPF | Separate | OK | OK **[3]** |
+| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
+| | | | eUPF | Separate | OK | OK **[4]** |
 
 <a id="4g"></a>
 
@@ -134,15 +134,15 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
      parameter:
        use_upg_vpp: true
    ```
-3. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1456 bytes before the downlink packets arrive at the N6 interface of the eUPF. This 1456 bytes is 1500 bytes minus 44 bytes. The 44 bytes is the size of the headers added when eUPF encapsulates the downlink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (12 bytes + 4 bytes) including one GTP-U Extension Header for QFI. See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
-
-   ```
-   # ip link set ens20 mtu 1456
-   ```
-4. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
+3. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
    
    `smfcfg.yaml`
    ```
    configuration:
      nwInstFqdnEncoding: true
+   ```
+4. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1456 bytes before the downlink packets arrive at the N6 interface of the eUPF. This 1456 bytes is 1500 bytes minus 44 bytes. The 44 bytes is the size of the headers added when eUPF encapsulates the downlink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (12 bytes + 4 bytes) including one GTP-U Extension Header for QFI. See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
+
+   ```
+   # ip link set ens20 mtu 1456
    ```
