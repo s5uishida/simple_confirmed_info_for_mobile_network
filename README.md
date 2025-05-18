@@ -87,7 +87,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | UPF | N3/N4/N6 | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- |
-| UERANSIM | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
+| UERANSIM **[4]** | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
@@ -95,7 +95,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
-| srsRAN_4G | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[5]** | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
@@ -103,14 +103,14 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
 | | | | eUPF | Separate | OK | OK |
-| PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
+| PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
-| | | | eUPF | Separate | OK | OK **[4]** |
+| | | | eUPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
-| | | | eUPF | Separate | OK | OK **[4]** |
+| | | | eUPF | Separate | OK | OK |
 
 <a id="4g"></a>
 
@@ -118,7 +118,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | SGW-U | PGW-U (UPF) | S5u/Sxb/SGi | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| srsRAN_4G | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[7]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | | eUPF | Separate | OK | OK |
@@ -141,8 +141,19 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    configuration:
      nwInstFqdnEncoding: true
    ```
-4. When connecting PacketRusher to eUPF and using iperf3, for avoiding IP fragmentation, reduce the MTU of the N6 interface of the Data Network Gateway to 1456 bytes before the downlink packets arrive at the N6 interface of the eUPF. This 1456 bytes is 1500 bytes minus 44 bytes. The 44 bytes is the size of the headers added when eUPF encapsulates the downlink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (12 bytes + 4 bytes) including one GTP-U Extension Header for QFI. See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the N6 interface of the Data Network Gateway is `ens20`, set it as follows.
+4. The MTU of the tunnel interface of UERANSIM is fixed at 1400 bytes.
+5. The MTU of the tunnel interface of srsRAN_4G NR-UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_Project gNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G NR-UE to 1456 bytes. This 1456 bytes is 1500 bytes minus 44 bytes. The 44 bytes is the size of the headers added when srsRAN_Project gNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (12 bytes + 4 bytes) including one GTP-U Extension Header for QFI. See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G NR-UE is `tun_srsue`, set it as follows.
 
    ```
-   # ip link set ens20 mtu 1456
+   # ip link set tun_srsue mtu 1456
+   ```
+6. The MTU of the tunnel interface of PacketRusher NR-UE is 1464 bytes by default. With this value, uplink packets are fragmented at the gNodeB equivalent function in PacketRusher. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of PacketRusher NR-UE to 1456 bytes. This 1456 bytes is the same meaning as the value explained in **[5]**. For example, if the interface assigned to VRF of PacketRusher is `val0000001000`, set it as follows.
+
+   ```
+   # ip link set val0000001000 mtu 1456
+   ```
+7. The MTU of the tunnel interface of srsRAN_4G UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_4G eNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G UE to 1464 bytes. This 1464 bytes is 1500 bytes minus 36 bytes. The 36 bytes is the size of the headers added when srsRAN_4G eNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (8 bytes, No Sequence Number and No GTP-U Extension Header). See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G UE is `tun_srsue`, set it as follows.
+
+   ```
+   # ip link set tun_srsue mtu 1464
    ```
