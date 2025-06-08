@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.7.1+ | `8c2097ea87413f8497076a4b20f0f91d4531ac8d`<br>2025.04.16 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 0.7.1+ | `5653b09a97db9b38e7a03d118649d38f4e95d7a2`<br>2025.06.04 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
