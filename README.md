@@ -66,7 +66,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 23.11+ | `ec29b0c1ff79cebcbe66caa6d6b90778261c42b8`<br>2024.02.01 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| RAN & UE | 23.11+ | `1fab3df863f66fdb6c3b34f1b39e745dbcb12d5e`<br>2025.10.22 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [PacketRusher](https://github.com/HewlettPackard/PacketRusher)
 
