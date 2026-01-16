@@ -50,6 +50,12 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | UPF | 0.7.1+ | `a8d774a0533ad71ddd59899be26f4aee8a31b5d2`<br>2025.06.16 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
+### [OAI-CN5G-UPF](https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-upf)
+
+| Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
+| --- | --- | --- | --- | --- | --- | --- |
+| UPF | 2.2.0<br>(+patch) | `e025cdfb3a9c18a228f2efe36bd06b9de998554c`<br>2025.12.13 | Ubuntu<br>22.04 | 1 | 8GB | 20GB |
+
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
@@ -91,26 +97,32 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | OK | OK |
 | srsRAN_4G **[5]** | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | -- | -- |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | -- | -- |
 | PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF | Separate | OK | OK |
 
 <a id="4g"></a>
 
