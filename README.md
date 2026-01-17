@@ -36,7 +36,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | C-Plane | 4.0.1 | `228ac5f7b8b0c3d160bccb3470901b3e87e756c9`<br>2025.04.21<br>**(Latest nightly build on 2025.04.27)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | [UPF](https://github.com/free5gc/go-upf) | 1.2.6 | `07801dcf3cfd0516610aae3fa08809cfd0b2497f`<br>2025.03.03 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.14 | `3b9166f29812b9613447225d10beb28ef087cf4c`<br>2025.04.21 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.16 | `8d723c29fc0de3eeeff3e9a91132838579e8ee1b`<br>2025.12.02 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
@@ -79,7 +79,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 20250225+ | `2f625c61b7109a3786dc86881f8c284f724469ba`<br>2025.12.09 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.16 | `8d723c29fc0de3eeeff3e9a91132838579e8ee1b`<br>2025.12.03 | -- | -- | -- | -- |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.16 | `8d723c29fc0de3eeeff3e9a91132838579e8ee1b`<br>2025.12.02 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
