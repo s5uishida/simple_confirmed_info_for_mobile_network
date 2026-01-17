@@ -78,8 +78,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 20250225+ | `2b2657337f48a2586d1a7f604ac3674085503b21`<br>2025.04.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.14 | `3b9166f29812b9613447225d10beb28ef087cf4c`<br>2025.04.21 | -- | -- | -- | -- |
+| RAN & UE | 20250225+ | `2f625c61b7109a3786dc86881f8c284f724469ba`<br>2025.12.09 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.9.16 | `8d723c29fc0de3eeeff3e9a91132838579e8ee1b`<br>2025.12.03 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
 
