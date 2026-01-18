@@ -56,7 +56,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 2.2.0<br>(+patch) | `e025cdfb3a9c18a228f2efe36bd06b9de998554c`<br>2025.12.13 | Ubuntu<br>22.04 | 1 | 6GB | 20GB |
+| UPF | 2.2.0<br>(+[patch](https://github.com/s5uishida/install_oai_upf/tree/main#get_patch)) | `e025cdfb3a9c18a228f2efe36bd06b9de998554c`<br>2025.12.13 | Ubuntu<br>22.04 | 1 | 6GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
