@@ -30,7 +30,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | C-Plane | 2.7.6+ | `d7875898895f17c386f2057e4a201411098a398b`<br>2025.08.03 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | UPF | 2.7.6+ | `d7875898895f17c386f2057e4a201411098a398b`<br>2025.08.03 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
-**Note. [The next commit version](https://github.com/open5gs/open5gs/commit/417f6e0e56cf928b503c26421522a81321307e99) caused PFCP communication with eUPF to not work properly.**
+**Note. In [the next commit version](https://github.com/open5gs/open5gs/commit/417f6e0e56cf928b503c26421522a81321307e99) above, PFCP communication with eUPF did not work properly.**
 
 ### [free5GC](https://github.com/free5gc/free5gc)
 
