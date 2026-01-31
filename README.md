@@ -109,7 +109,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | -- | -- |
+| | | | OAI-CN5G-UPF | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
