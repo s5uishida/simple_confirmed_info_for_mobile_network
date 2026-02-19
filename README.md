@@ -64,11 +64,21 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 3.2.7+ | `b4157fa9413a083a3b996c694067a011751fae82`<br>2025.10.25 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
+### [OCUDU](https://gitlab.com/ocudu/ocudu)
+
+| Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
+| --- | --- | --- | --- | --- | --- | --- |
+| RAN | -- | `b8e3be1e489dcbec3bb3c12e4d291c1d95b9cec0`<br>2026.02.19 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
+
+**This issue regarding the number of CPU cores may be unique to my environment.**
+
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN | 25.10+ | `4bf1543936d062686d64c10724d2f27a9854f065`<br>2026.02.16 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
+
+**This issue regarding the number of CPU cores may be unique to my environment.**
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
@@ -105,7 +115,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF | Separate | OK | OK |
-| srsRAN_4G **[5]** | srsRAN_Project | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
