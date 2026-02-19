@@ -70,7 +70,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN | -- | `b8e3be1e489dcbec3bb3c12e4d291c1d95b9cec0`<br>2026.02.19 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
 
-**This constraint regarding the number of CPU cores may be unique to my environment.**
+**When OCUDU gNodeB is configured with the ZMQ-based RF driver, this constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
@@ -78,7 +78,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN | 25.10+ | `4bf1543936d062686d64c10724d2f27a9854f065`<br>2026.02.16 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
 
-**This constraint regarding the number of CPU cores may be unique to my environment.**
+**When srsRAN_Project gNodeB is configured with the ZMQ-based RF driver, this constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
 ### [srsRAN_4G](https://github.com/srsran/srsRAN_4G)
 
