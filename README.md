@@ -74,6 +74,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
+srsRAN_Project is now OCUDU. The repository will be archived and is no longer maintained.
+
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN | 25.10+ | `4bf1543936d062686d64c10724d2f27a9854f065`<br>2026.02.16 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
