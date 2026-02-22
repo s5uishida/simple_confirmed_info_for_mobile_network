@@ -74,7 +74,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
-srsRAN_Project is now OCUDU. The repository will be archived and is no longer maintained.
+srsRAN_Project is now OCUDU.
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
