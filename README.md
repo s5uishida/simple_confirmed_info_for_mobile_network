@@ -111,32 +111,32 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 
 <a id="4g"></a>
 
@@ -183,3 +183,10 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    ```
    # ip link set tun_srsue mtu 1464
    ```
+8. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
+   | UPF mode | Open5GS | free5GC |
+   | --- | --- | --- |
+   | Simple Switch | OK **[i]** | NG |
+   | eBPF/XDP | OK | OK |
+   1. In N3 downlink packets from OAI-CN5G-UPF to gNodeB, the QFI of PDU session container in GTP-U extension header may be 0. In this case, for example, the gNodeB of srsRAN_Project seems to drop such packets. In my environment, the issue has not been solved yet.
+       Also, the gNodeBs of UERANSIM and PacketRusher seem to not drop downlink packets with QFI=0.
