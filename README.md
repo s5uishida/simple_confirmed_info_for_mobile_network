@@ -186,7 +186,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 8. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
    | UPF mode | Open5GS | free5GC |
    | --- | --- | --- |
-   | Simple Switch | OK **[i]** | NG |
+   | Simple Switch | OK **(\*i)** | NG |
    | eBPF/XDP | OK | OK |
    1. In N3 downlink packets from OAI-CN5G-UPF to gNodeB, the QFI of PDU session container in GTP-U extension header may be 0. In this case, for example, the gNodeB of srsRAN_Project seems to drop such packets. In my environment, the issue has not been solved yet.  
        Also, the gNodeBs of UERANSIM and PacketRusher seem to not drop downlink packets with QFI=0.
