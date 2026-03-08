@@ -34,11 +34,9 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 4.2.0+ | `1adcc110e4ad4ad90ac9a5c60413bd9569a553e8`<br>2026.02.02<br>**(Latest nightly build on 2026.02.11)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.2.8 | `b798fe5ee6a984be492fa53958dd5f1305469f85`<br>2026.01.05 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
-| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.9.16 | `8d723c29fc0de3eeeff3e9a91132838579e8ee1b`<br>2025.12.02 | -- | -- | -- | -- |
-
-**Note. Built free5GC with Go 1.24.12.**
+| C-Plane | 4.2.1 | `52d9545faa42efca71b1567cf7d5c5afca79f490`<br>2026.03.03<br>**(Latest nightly build on 2026.03.07)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.2.9 | `ce0108ac97bd41fdd815f38e99c0cb72e597758f`<br>2026.03.02 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.10.2 | `952fb419130f5fc44cac1874e8183312006b746c`<br>2026.03.04 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
 
