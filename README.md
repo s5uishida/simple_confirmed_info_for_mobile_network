@@ -90,7 +90,7 @@ srsRAN_Project is now OCUDU.
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 20250225+ | `6c785cfcc5dfee62f91267ecb02dbc2f936a6e32`<br>2026.02.12 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 20250225+ | `5bf8b4ed9350a4dfc732eb6a6074aa97d1426308`<br>2026.03.25 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.10.2 | `952fb419130f5fc44cac1874e8183312006b746c`<br>2026.03.04 | -- | -- | -- | -- |
 
 <a id="ping_iperf3"></a>
