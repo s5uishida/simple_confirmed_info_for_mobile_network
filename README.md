@@ -60,7 +60,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 3.2.8 | `ca1a66fffe282767bb08618af9f848e3b68ea47b`<br>2026.04.15 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 3.2.8<br>(+[patch](https://github.com/aligungr/UERANSIM/pull/785)) | `ca1a66fffe282767bb08618af9f848e3b68ea47b`<br>2026.04.15 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [OCUDU](https://gitlab.com/ocudu/ocudu)
 
