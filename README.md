@@ -27,8 +27,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 2.7.7+ | `288f1ca49e1a124c00a052df17aaf49d133d08b8`<br>2026.04.14 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| UPF | 2.7.7+ | `288f1ca49e1a124c00a052df17aaf49d133d08b8`<br>2026.04.14 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| C-Plane | 2.7.7+ | `35a1594a74b0760b0e1122d9393ddf34aa1cf2a4`<br>2026.04.23 | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| UPF | 2.7.7+ | `35a1594a74b0760b0e1122d9393ddf34aa1cf2a4`<br>2026.04.23 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [free5GC](https://github.com/free5gc/free5gc)
 
