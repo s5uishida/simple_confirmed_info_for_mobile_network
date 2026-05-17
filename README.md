@@ -66,7 +66,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 26.04+ | `2563975a74baf94db51b4a41d6ff48e945cbb8f7`<br>2026.05.15 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
+| RAN | 26.04+ | `2563975a74baf94db51b4a41d6ff48e945cbb8f7`<br>2026.05.12 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
 
 **When OCUDU gNodeB is configured with the ZMQ-based RF driver, this constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
