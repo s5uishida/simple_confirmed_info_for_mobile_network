@@ -50,7 +50,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | UPF | 0.7.1+ | `241af932a40582f490b10e4467651bcb0d843a92`<br>2026.02.01 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
-### [OAI-CN5G-UPF](https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-upf)
+### [OAI-CN5G-UPF](https://github.com/openairinterface/oai-cn5g-upf)
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
