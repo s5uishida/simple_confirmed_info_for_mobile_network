@@ -60,7 +60,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 3.3.0+ | `dd7d3e8ea2d9caa4e266b60d6dcfe33443f2dd2b`<br>2026.09.06 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 3.3.0+ | `b3d978a3c514915b4088fd47592a7b3d4bf29542`<br>2026.09.06 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [OCUDU](https://gitlab.com/ocudu/ocudu)
 
