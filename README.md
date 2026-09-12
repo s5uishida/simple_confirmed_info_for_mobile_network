@@ -153,7 +153,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 2. To connect Open5GS SMF to UPG-VPP, add the following parameter `use_upg_vpp: true` in `smf.yaml`. See [here](https://github.com/open5gs/open5gs/discussions/3591#discussioncomment-11369302) for the reason.
    
    `smf.yaml`
-   ```
+   ```yaml
    global:
      parameter:
        use_upg_vpp: true
@@ -161,7 +161,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 3. To connect free5GC SMF to UPG-VPP, add the following parameter `nwInstFqdnEncoding: true` in `smfcfg.yaml`. See [here](https://github.com/s5uishida/enable_network_instance_encoding_free5gc_v3_3_0) for the reason.
    
    `smfcfg.yaml`
-   ```
+   ```yaml
    configuration:
      nwInstFqdnEncoding: true
    ```
