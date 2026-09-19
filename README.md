@@ -54,7 +54,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 2.2.1+<br>(+[patch](https://github.com/s5uishida/install_oai_upf/tree/main#get_patch)) | `4a8d40580b78047f6a2bde8508f7d35354834602`<br>2026.09.09 | Ubuntu<br>24.04 | 1 | 6GB | 20GB |
+| UPF | 2.2.1+<br>(+[patch](https://github.com/s5uishida/install_oai_upf/tree/main#get_patch)) | `4b9190a4e1bf9d6d8fa2d8d9c593ce22f6f0b264`<br>2026.09.09 | Ubuntu<br>24.04 | 1 | 6GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
@@ -109,7 +109,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
@@ -119,7 +119,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
@@ -129,7 +129,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK **[2]** | OK **[2]** |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
