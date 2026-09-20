@@ -84,7 +84,7 @@ srsRAN_Project is now OCUDU.
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 25.10 | `6bcbd9e5bf8686aa7085202cd847c5ddd64a9c16`<br>2026.01.18 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| RAN & UE | 25.10+ | `bef8680d5f9714f3e040e6f9cbc88d7888439b6d`<br>2026.09.10 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [PacketRusher](https://github.com/HewlettPackard/PacketRusher)
 
