@@ -83,7 +83,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | RAN & UE | 20250225+ | `5bf8b4ed9350a4dfc732eb6a6074aa97d1426308`<br>2026.03.25 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.10.2+ | `4d3c39b97ecd01c4b841b44d8691cdd48611f642`<br>2026.08.04 | -- | -- | -- | -- |
 
-<details><summary><h2>Deprecated</h2></summary>
+<details><summary><h3>Deprecated</h3></summary>
 
 ### [srsRAN_Project](https://github.com/srsran/srsRAN_Project)
 
