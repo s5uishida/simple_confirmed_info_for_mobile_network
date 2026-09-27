@@ -111,32 +111,32 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | --- | --- | --- | --- | --- | --- | --- |
 | UERANSIM **[4]** | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
+| | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
+| | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[1][2]** | OK **[1][2]** |
+| | | | UPG-VPP **[1][2]** | Separate | OK | OK  |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[1][3]** | OK **[1][3]** |
+| | | | UPG-VPP **[1][3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
+| | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
-| | | | UPG-VPP | Separate | OK **[3]** | OK **[3]** |
+| | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 
@@ -148,7 +148,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | srsRAN_4G **[7]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | | Same | OK | OK |
-| | | | | UPG-VPP | Separate | OK **[2]** | OK **[2]** |
+| | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
 
 <a id="footnotes"></a>
