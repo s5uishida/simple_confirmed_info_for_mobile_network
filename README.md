@@ -150,7 +150,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
-| | | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
+| | | | | OAI-CN5G-UPF<br>**[8][9]** | Separate | OK | OK |
 
 <a id="footnotes"></a>
 
