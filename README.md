@@ -54,7 +54,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 2.2.1+<br>(+[patch](https://github.com/s5uishida/install_oai_upf/tree/main#get_patch)) | `4b9190a4e1bf9d6d8fa2d8d9c593ce22f6f0b264`<br>2026.09.09 | Ubuntu<br>24.04 | 1 | 6GB | 20GB |
+| UPF | 2.2.1+<br>(+[patch](https://github.com/s5uishida/install_oai_upf/tree/main#get_patch)) | `3ceb6942452a985af47e39007ebf82fb601fb9e0`<br>2026.10.02 | Ubuntu<br>24.04 | 1 | 6GB | 20GB |
 
 ### [UERANSIM](https://github.com/aligungr/UERANSIM)
 
@@ -113,7 +113,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
@@ -123,7 +123,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][2]** | Separate | OK | OK  |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][3]** | Separate | OK | OK |
@@ -133,7 +133,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
@@ -150,7 +150,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
-| | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 
 <a id="footnotes"></a>
 
@@ -190,8 +190,34 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    | UPF mode | Generation | Open5GS | free5GC |
    | --- | --- | --- | --- |
    | Simple Switch | 4G | OK | N/A |
-   | | 5G | OK **(\*i)** | NG |
-   | eBPF/XDP **(\*ii)** | 5G | OK | OK |
-   1. In N3 downlink packets from OAI-CN5G-UPF to gNodeB, the QFI of PDU session container in GTP-U extension header may be 0. In this case, for example, the gNodeB of srsRAN_Project seems to drop such packets. In my environment, the issue has not been solved yet.  
-       Also, the gNodeBs of UERANSIM and PacketRusher seem to not drop downlink packets with QFI=0.
-   2. The eBPF/XDP-based OAI-CN5G-UPF requires the QFI in PDU session container within GTP-U extension header for uplink packets. Therefore, it does not support 4G.
+   | | 5G | OK | NG |
+   | eBPF/XDP **(\*i)** | 5G | OK | OK |
+   1. The eBPF/XDP-based OAI-CN5G-UPF requires the QFI in PDU session container within GTP-U extension header for uplink packets. Therefore, it does not support 4G.
+
+9. The Flow Description of the SDF Filter in OAI-CN5G-UPF currently does not support IPv6. Therefore, to interoperate with Open5GS SMF, I built Open5GS with the following temporary workarounds.
+    ```diff
+    diff -ur open5gs.orig/src/smf/gx-handler.c open5gs/src/smf/gx-handler.c
+    --- open5gs.orig/src/smf/gx-handler.c   2026-09-28 21:35:32.000000000 +0900
+    +++ open5gs/src/smf/gx-handler.c        2026-10-03 19:04:31.624742704 +0900
+    @@ -282,7 +282,7 @@
+         /* Set UE-to-CP Flow-Description and Outer-Header-Creation */
+         up2cp_pdr->flow[up2cp_pdr->num_of_flow].fd = 1;
+         up2cp_pdr->flow[up2cp_pdr->num_of_flow].description =
+    -        (char *)"permit out 58 from ff02::2/128 to assigned";
+    +        (char *)"permit out 58 from any to assigned";
+         up2cp_pdr->num_of_flow++;
+     
+         ogs_assert(OGS_OK ==
+    diff -ur open5gs.orig/src/smf/npcf-handler.c open5gs/src/smf/npcf-handler.c
+    --- open5gs.orig/src/smf/npcf-handler.c 2026-09-28 21:35:32.000000000 +0900
+    +++ open5gs/src/smf/npcf-handler.c      2026-10-03 19:04:45.699879211 +0900
+    @@ -728,7 +728,7 @@
+         /* Set UE-to-CP Flow-Description and Outer-Header-Creation */
+         up2cp_pdr->flow[up2cp_pdr->num_of_flow].fd = 1;
+         up2cp_pdr->flow[up2cp_pdr->num_of_flow].description =
+    -        (char *)"permit out 58 from ff02::2/128 to assigned";
+    +        (char *)"permit out 58 from any to assigned";
+         up2cp_pdr->num_of_flow++;
+     
+         ogs_assert(OGS_OK ==
+    ```
