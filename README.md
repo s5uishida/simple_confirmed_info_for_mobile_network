@@ -187,7 +187,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    # ip link set tun_srsue mtu 1464
    ```
 8. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
-   | UPF mode | Generation | Open5GS | free5GC |
+   | UPF mode | Generation | Open5GS **[9]** | free5GC |
    | --- | --- | --- | --- |
    | Simple Switch | 4G | OK | N/A |
    | | 5G | OK | NG |
