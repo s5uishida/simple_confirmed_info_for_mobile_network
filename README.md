@@ -113,32 +113,32 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][2]** | Separate | OK | OK  |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
-| PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 
 <a id="4g"></a>
 
@@ -146,11 +146,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | SGW-U | PGW-U (UPF) | S5u/Sxb/SGi | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| srsRAN_4G **[6]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[7]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
-| | | | | OAI-CN5G-UPF<br>**[7][8]** | Separate | OK | OK |
+| | | | | OAI-CN5G-UPF<br>**[8][9]** | Separate | OK | OK |
 
 <a id="footnotes"></a>
 
@@ -176,20 +176,21 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    ```
    # ip link set tun_srsue mtu 1456
    ```
-6. The MTU of the tunnel interface of srsRAN_4G UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_4G eNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G UE to 1464 bytes. This 1464 bytes is 1500 bytes minus 36 bytes. The 36 bytes is the size of the headers added when srsRAN_4G eNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (8 bytes, No Sequence Number and No GTP-U Extension Header). See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G UE is `tun_srsue`, set it as follows.
+6. The MTU of the tunnel interface is 1456 on Ethernet. See [here](https://github.com/HewlettPackard/PacketRusher#usage) for details.
+7. The MTU of the tunnel interface of srsRAN_4G UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_4G eNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G UE to 1464 bytes. This 1464 bytes is 1500 bytes minus 36 bytes. The 36 bytes is the size of the headers added when srsRAN_4G eNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (8 bytes, No Sequence Number and No GTP-U Extension Header). See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G UE is `tun_srsue`, set it as follows.
 
    ```
    # ip link set tun_srsue mtu 1464
    ```
-7. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
-   | UPF mode | Generation | Open5GS [8] | free5GC |
+8. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
+   | UPF mode | Generation | Open5GS [9] | free5GC |
    | --- | --- | --- | --- |
    | Simple Switch | 4G | OK | N/A |
    | | 5G | OK | NG |
    | eBPF/XDP **(\*i)** | 5G | OK | OK |
    1. The eBPF/XDP-based OAI-CN5G-UPF requires the QFI in PDU session container within GTP-U extension header for uplink packets. Therefore, it does not support 4G.
 
-8. The Flow Description of the SDF Filter in OAI-CN5G-UPF currently does not support IPv6. Therefore, to interoperate with Open5GS SMF, I built Open5GS with the following temporary workarounds.
+9. The Flow Description of the SDF Filter in OAI-CN5G-UPF currently does not support IPv6. Therefore, to interoperate with Open5GS SMF, I built Open5GS with the following temporary workarounds.
     ```diff
     diff -ur open5gs.orig/src/smf/gx-handler.c open5gs/src/smf/gx-handler.c
     --- open5gs.orig/src/smf/gx-handler.c   2026-09-28 21:35:32.000000000 +0900
