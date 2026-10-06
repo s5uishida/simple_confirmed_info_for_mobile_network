@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.7.1+ | `241af932a40582f490b10e4467651bcb0d843a92`<br>2026.02.01 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| UPF | 0.7.1+ | `48f257edff3030b5a653d9484611636c05986a7f`<br>2026.10.05 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [OAI-CN5G-UPF](https://github.com/openairinterface/oai-cn5g-upf)
 
@@ -80,7 +80,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 20250225+ | `5bf8b4ed9350a4dfc732eb6a6074aa97d1426308`<br>2026.03.25 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 2.0.0 | `6fef144296d4b1595e690a3d8e55c2a25407077b`<br>2026.10.03 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.10.2+ | `4d3c39b97ecd01c4b841b44d8691cdd48611f642`<br>2026.08.04 | -- | -- | -- | -- |
 
 <details><summary><h3>Deprecated</h3></summary>
@@ -113,32 +113,32 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
 | srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][2]** | Separate | OK | OK  |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
-| PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
+| PacketRusher | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7][8]** | Separate | OK | OK |
 | | | free5GC | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
-| | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
+| | | | OAI-CN5G-UPF **[7]** | Separate | OK | OK |
 
 <a id="4g"></a>
 
@@ -146,11 +146,11 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | SGW-U | PGW-U (UPF) | S5u/Sxb/SGi | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| srsRAN_4G **[7]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[6]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
-| | | | | OAI-CN5G-UPF<br>**[8][9]** | Separate | OK | OK |
+| | | | | OAI-CN5G-UPF<br>**[7][8]** | Separate | OK | OK |
 
 <a id="footnotes"></a>
 
@@ -176,25 +176,20 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
    ```
    # ip link set tun_srsue mtu 1456
    ```
-6. The MTU of the tunnel interface of PacketRusher NR-UE is 1464 bytes by default. With this value, uplink packets are fragmented at the gNodeB equivalent function in PacketRusher. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of PacketRusher NR-UE to 1456 bytes. This 1456 bytes is the same meaning as the value explained in **[5]**. For example, if the interface assigned to VRF of PacketRusher is `val0000001000`, set it as follows.
-
-   ```
-   # ip link set val0000001000 mtu 1456
-   ```
-7. The MTU of the tunnel interface of srsRAN_4G UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_4G eNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G UE to 1464 bytes. This 1464 bytes is 1500 bytes minus 36 bytes. The 36 bytes is the size of the headers added when srsRAN_4G eNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (8 bytes, No Sequence Number and No GTP-U Extension Header). See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G UE is `tun_srsue`, set it as follows.
+6. The MTU of the tunnel interface of srsRAN_4G UE is 1500 bytes by default. With this value, uplink packets are fragmented at srsRAN_4G eNodeB. So for avoiding IP fragmentation, reduce the MTU of the tunnel interface of srsRAN_4G UE to 1464 bytes. This 1464 bytes is 1500 bytes minus 36 bytes. The 36 bytes is the size of the headers added when srsRAN_4G eNodeB encapsulates the uplink packets into GTP-U, and consists of IP Header (20 bytes), UDP Header (8 bytes) and GTP-U Header (8 bytes, No Sequence Number and No GTP-U Extension Header). See `3GPP TS 29.281 - 5 GTP-U header`. For example, if the tunnel interface of srsRAN_4G UE is `tun_srsue`, set it as follows.
 
    ```
    # ip link set tun_srsue mtu 1464
    ```
-8. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
-   | UPF mode | Generation | Open5GS [9] | free5GC |
+7. In my environment, when try to make OAI-CN5G-UPF work with Open5GS or free5GC C-Plane, the results of a simple operation confirmation were as follows. Please refer to [here](https://github.com/s5uishida/install_oai_upf) for the version and detailed build instructions.
+   | UPF mode | Generation | Open5GS [8] | free5GC |
    | --- | --- | --- | --- |
    | Simple Switch | 4G | OK | N/A |
    | | 5G | OK | NG |
    | eBPF/XDP **(\*i)** | 5G | OK | OK |
    1. The eBPF/XDP-based OAI-CN5G-UPF requires the QFI in PDU session container within GTP-U extension header for uplink packets. Therefore, it does not support 4G.
 
-9. The Flow Description of the SDF Filter in OAI-CN5G-UPF currently does not support IPv6. Therefore, to interoperate with Open5GS SMF, I built Open5GS with the following temporary workarounds.
+8. The Flow Description of the SDF Filter in OAI-CN5G-UPF currently does not support IPv6. Therefore, to interoperate with Open5GS SMF, I built Open5GS with the following temporary workarounds.
     ```diff
     diff -ur open5gs.orig/src/smf/gx-handler.c open5gs/src/smf/gx-handler.c
     --- open5gs.orig/src/smf/gx-handler.c   2026-09-28 21:35:32.000000000 +0900
