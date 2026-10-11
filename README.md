@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.7.1+ | `48f257edff3030b5a653d9484611636c05986a7f`<br>2026.10.05 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| UPF | 0.7.1+ | `7465720da1f62b4e70141bef4d9b36951cf30802`<br>2026.10.11 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [OAI-CN5G-UPF](https://github.com/openairinterface/oai-cn5g-upf)
 
@@ -60,7 +60,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 3.3.0+ | `b3d978a3c514915b4088fd47592a7b3d4bf29542`<br>2026.09.06 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 3.3.0+ | `ccb49bac8223b3f9408377c713347ba683a22d9f`<br>2026.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [OCUDU](https://gitlab.com/ocudu/ocudu)
 
@@ -109,7 +109,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | UPF | N3/N4/N6 | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- |
-| UERANSIM **[4]** | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
+| UERANSIM **[4][10]** | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
@@ -217,3 +217,5 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
      
          ogs_assert(OGS_OK ==
     ```
+
+10. If `GBR QoS Flow Information` is not included in `PDU SESSION RESOURCE SETUP REQUEST` message from AMF to gNodeB, please set the 5QI value registered for the UE to Non-GBR (e.g., 9) rather than GBR.
