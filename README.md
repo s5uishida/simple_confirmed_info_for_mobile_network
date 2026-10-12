@@ -109,7 +109,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 
 | UE | RAN | C-Plane | UPF | N3/N4/N6 | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- |
-| UERANSIM **[4][10]** | UERANSIM | Open5GS | Open5GS | Separate | OK | OK |
+| UERANSIM **[4]** | UERANSIM **[10]** | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
