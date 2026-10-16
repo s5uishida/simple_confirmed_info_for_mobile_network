@@ -48,7 +48,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| UPF | 0.7.1+ | `7465720da1f62b4e70141bef4d9b36951cf30802`<br>2026.10.11 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| UPF | 0.7.1+ | `9ce3c28e87e2d1909b6b5674cf8af1ba26a2ac5e`<br>2026.10.13 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [OAI-CN5G-UPF](https://github.com/openairinterface/oai-cn5g-upf)
 
