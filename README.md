@@ -80,7 +80,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 2.0.0 | `78360917e6f7a3b21a5e6846d2f794c4dc08b20c`<br>2026.10.07 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 2.0.0+ | `78360917e6f7a3b21a5e6846d2f794c4dc08b20c`<br>2026.10.07 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.10.3 | `248720fb7f18bac51ee3b4dbdffc8e5c97d47e85`<br>2026.10.16 | -- | -- | -- | -- |
 
 <details><summary><h3>Deprecated</h3></summary>
