@@ -60,7 +60,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 3.3.0+ | `ccb49bac8223b3f9408377c713347ba683a22d9f`<br>2026.10.11 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 3.3.0+ | `4f45e18f80b0684f7d6e29f1fea0f579e9243d68`<br>2026.10.14 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
 ### [OCUDU](https://gitlab.com/ocudu/ocudu)
 
@@ -80,7 +80,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 2.0.0 | `6fef144296d4b1595e690a3d8e55c2a25407077b`<br>2026.10.03 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| RAN & UE | 2.0.0 | `78360917e6f7a3b21a5e6846d2f794c4dc08b20c`<br>2026.10.07 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(RAN) | 0.10.3 | `248720fb7f18bac51ee3b4dbdffc8e5c97d47e85`<br>2026.10.16 | -- | -- | -- | -- |
 
 <details><summary><h3>Deprecated</h3></summary>
