@@ -66,7 +66,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN | 26.04+ | `c82434f8937f9a3108581d2525fb2f831e4605e3`<br>2026.09.15 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
+| RAN | 26.10+ | `9861d780d1fd25ae546739fdcbbb98dbfc4376bd`<br>2026.11.05 | Ubuntu<br>24.04 | 5 | 4GB | 10GB |
 
 **When OCUDU gNodeB is configured with the ZMQ-based RF driver, this constraint regarding the minimum number of CPU cores may be unique to my environment.**
 
@@ -74,7 +74,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| RAN & UE | 25.10+ | `bef8680d5f9714f3e040e6f9cbc88d7888439b6d`<br>2026.09.10 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
+| RAN & UE | 26.10+ | `6edaedb4eba5a8db79ce8e6986458f61be88fdc1`<br>2026.11.06 | Ubuntu<br>24.04 | 1 | 2GB | 10GB |
 
 ### [PacketRusher](https://github.com/HewlettPackard/PacketRusher)
 
