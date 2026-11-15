@@ -62,7 +62,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 | --- | --- | --- | --- | --- | --- | --- |
 | RAN & UE | 3.3.0+ | `4f45e18f80b0684f7d6e29f1fea0f579e9243d68`<br>2026.10.14 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 
-### [OCUDU](https://gitlab.com/ocudu/ocudu)
+### [OCUDU](https://gitlab.com/ocudu/ocudu) - Successor to srsRAN_Project
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -121,7 +121,7 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | UPG-VPP **[3]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
-| srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
+| srsRAN_4G **[5]** | OCUDU | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | free5GC (go-upf) | Separate | OK | OK |
 | | | | | Same | OK | OK |
