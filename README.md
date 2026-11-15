@@ -34,8 +34,8 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 4.3.0+ | `4ba600683435e012fea050d89cd4883c420398dd`<br>2026.10.22<br>**(Latest nightly build on 2026.10.31)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
-| [UPF](https://github.com/free5gc/go-upf) | 1.3.0+ | `6404375efb7173ffde243e26395582ea0a981257`<br>2026.10.28 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
+| C-Plane | 4.3.0+ | `aab3d81bff5f68b166936d8919e1ad68425d51bb`<br>2026.11.12<br>**(Latest nightly build on 2026.11.14)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| [UPF](https://github.com/free5gc/go-upf) | 1.3.0+ | `f337173508fb8bf7a8534fb14de9277b95b83d07`<br>2026.11.14 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.10.3 | `248720fb7f18bac51ee3b4dbdffc8e5c97d47e85`<br>2026.10.16 | -- | -- | -- | -- |
 
 ### [UPG-VPP](https://github.com/travelping/upg-vpp)
@@ -111,6 +111,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | --- | --- | --- | --- | --- | --- | --- |
 | UERANSIM **[4]** | UERANSIM **[10]** | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
+| | | | free5GC | Separate | OK | OK |
+| | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
@@ -121,6 +123,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | srsRAN_4G **[5]** | OCUDU<br>(srsRAN_Project) | Open5GS | Open5GS | Separate | OK | OK |
 | | | | | Same | OK | OK |
+| | | | free5GC | Separate | OK | OK |
+| | | | | Same | OK | OK |
 | | | | UPG-VPP **[1][2]** | Separate | OK | OK  |
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8][9]** | Separate | OK | OK |
@@ -130,6 +134,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | | | | eUPF | Separate | OK | OK |
 | | | | OAI-CN5G-UPF **[8]** | Separate | OK | OK |
 | PacketRusher **[6]** | PacketRusher | Open5GS | Open5GS | Separate | OK | OK |
+| | | | | Same | OK | OK |
+| | | | free5GC | Separate | OK | OK |
 | | | | | Same | OK | OK |
 | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | eUPF | Separate | OK | OK |
@@ -147,6 +153,8 @@ Below are the results of confirming the operation of ping and iperf3 in my envir
 | UE | RAN | C-Plane | SGW-U | PGW-U (UPF) | S5u/Sxb/SGi | Ping | iPerf3 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | srsRAN_4G **[7]** | srsRAN_4G | Open5GS | Open5GS | Open5GS | Separate | OK | OK |
+| | | | | | Same | OK | OK |
+| | | | | free5GC | Separate | OK | OK |
 | | | | | | Same | OK | OK |
 | | | | | UPG-VPP **[2]** | Separate | OK | OK |
 | | | | | eUPF | Separate | OK | OK |
