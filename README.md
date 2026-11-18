@@ -34,7 +34,7 @@ Also, please note that there may be cases where I have not been able to confirm 
 
 | Role | Version | Commit & Date | OS | CPU<br>(Min) | Mem<br>(Min) | HDD<br>(Min) |
 | --- | --- | --- | --- | --- | --- | --- |
-| C-Plane | 4.3.0+ | `4ba600683435e012fea050d89cd4883c420398dd`<br>2026.10.22<br>**(Latest nightly build on 2026.10.31)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
+| C-Plane | 4.3.0+ | `31e07dd9e858c3de5b2403b22507aa8716daeb27`<br>2026.11.15<br>**(Latest nightly build on 2026.11.18)** | Ubuntu<br>24.04 | 1 | 2GB | 20GB |
 | [UPF](https://github.com/free5gc/go-upf) | 1.3.0+ | `f337173508fb8bf7a8534fb14de9277b95b83d07`<br>2026.11.14 | Ubuntu<br>24.04 | 1 | 1GB | 10GB |
 | [gtp5g](https://github.com/free5gc/gtp5g)<br>(UPF) | 0.10.3 | `248720fb7f18bac51ee3b4dbdffc8e5c97d47e85`<br>2026.10.16 | -- | -- | -- | -- |
 
